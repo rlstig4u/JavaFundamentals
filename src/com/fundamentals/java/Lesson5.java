@@ -76,7 +76,7 @@ public class Lesson5 {
         return type1 + type2;
     }
 
-    //Method shows Instance that changes value inside the method.
+    //Method shows Instance Variables that changes value inside the method.
 
     public void showInstanceVariable() {
         System.out.println("Before");
@@ -94,7 +94,7 @@ public class Lesson5 {
         int i5 = (int)myLong; //explicit or narrowing conversion
 
         //int i10 = (int)l2; //explicit conversion overflow
-        //System.out.println(i10);
+        //System.out.println(i10); //274,020,071
         int i20 = (int)myDouble;//explicit or narrowing conversation
 System.out.println(i20); //double value was 98.6
 

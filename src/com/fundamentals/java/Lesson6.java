@@ -17,7 +17,7 @@ public class Lesson6 {
         //Method shows String method for concat
     public void exampleConcat(String value) {
         String happy = myString.concat(value);
-        //Keep Smiling
+        // myString = LaMars
         System.out.println(happy);
 
     }
