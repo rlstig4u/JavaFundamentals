@@ -7,11 +7,34 @@ package com.fundamentals.java;
 public class Main {
 
     public static void main(String[] args) {
-        lesson7Examples();
+        lesson8Examples2();
+        //lesson8Examples();
+        //lesson7Examples();
         //moreLesson6();
         //lesson6Examples();
         //lesson5Examples();
         //houseExample();
+    }
+
+    public static void lesson8Examples2() {
+        Lesson8 otherLesson = new Lesson8();
+        otherLesson.basicWhileExample();
+        otherLesson.basicDoWhileExample();
+        otherLesson.basicForLoopExample();
+        otherLesson.basicBranchingExample();
+
+
+    }
+
+    public static void lesson8Examples1(){
+        Lesson8 myLesson8 = new Lesson8();
+        myLesson8.basicIfExample(5,10); //prints before & after
+        myLesson8.basicIfExample(5,5); //prints before if & after
+        myLesson8.basicIfElseExample(10, 12);//not equal
+        myLesson8.basicIfElseExample(12, 12); //equal
+        myLesson8.basicIfChainExample(42);
+        myLesson8.basicIfAndOrExample(36);
+        myLesson8.basicSwitchExample(3);
     }
 
 
@@ -52,9 +75,7 @@ public class Main {
         System.out.println(myUpper);
         myLesson6.exampleLength();
 
-
     }
-
 
     public static void lesson5Examples(){
         Lesson5 myLesson5 = new Lesson5();
