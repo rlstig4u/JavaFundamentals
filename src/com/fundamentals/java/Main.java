@@ -8,6 +8,8 @@ import com.fundamentals.lesson10.Lesson10;
 public class Main {
 
     public static void main(String[] args) {
+        lesson12Example();
+        //TruckExample();
         lesson11Example();
         //lesson10Example();
         //lesson9Example();
@@ -21,10 +23,21 @@ public class Main {
         //houseExample();
 
     } // end main method
+
+    public static void lesson12Example() {
+        Condo myCondo = new Condo();
+        myCondo.doorOpenClose();
+        Condo mySecondCondo = new Condo("railing","orange", 32,"composite", "steel");
+        System.out.print(mySecondCondo.getDoorColor());
+        
+    }
+    public static void TruckExample() {
+        Truck myTruck = new Truck("boxbed ",26, "wheelSize", "windowType", "colorType");
+        System.out.print(myTruck.getWheelSize());
+    }
+
     public static void lesson11Example() {
         House house1 = new House();
-
-
         House house2 = new House("white");
     }
 
@@ -46,17 +59,13 @@ public class Main {
         BottlesOfBeerSong song = new BottlesOfBeerSong();
         song.timeToSing();
     }
-
     public static void lesson8Examples2() {
         Lesson8 otherLesson = new Lesson8();
         otherLesson.basicWhileExample();
         otherLesson.basicDoWhileExample();
         otherLesson.basicForLoopExample();
         otherLesson.basicBranchingExample();
-
-
     }
-
     public static void lesson8Examples1(){
         Lesson8 myLesson8 = new Lesson8();
         myLesson8.basicIfExample(5,10); //prints before & after
@@ -67,8 +76,6 @@ public class Main {
         myLesson8.basicIfAndOrExample(36);
         myLesson8.basicSwitchExample(3);
     }
-
-
     public static void lesson7Examples(){
 
         Lesson7 myLesson7 = new Lesson7();
@@ -80,19 +87,13 @@ public class Main {
         myLesson7.exampleRelational();
         myLesson7.exampleIncrement();
         myLesson7.exampleDecrement();
-
-
         }
-
 
     public static void moreLesson6(){
         Lesson6 myOtherLesson6 = new Lesson6();
         myOtherLesson6.exampleBuilder ("Spaghetti", 2);
         myOtherLesson6.exampleChar();
         myOtherLesson6.exampleEscape();
-
-
-
     }
 
     public static void lesson6Examples(){
@@ -116,18 +117,11 @@ public class Main {
         System.out.println(example);
         myLesson5.showInstanceVariable();
         myLesson5.showConversions();
-
     }
-
-
-
     public static void houseExample() {
-
         System.out.println("Welcome to Java");
         House myHouse = new House();
         myHouse.doorOpenClose();
-
-
 
     }
 }
