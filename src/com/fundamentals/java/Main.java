@@ -29,7 +29,9 @@ public class Main {
         myCondo.doorOpenClose();
         Condo mySecondCondo = new Condo("railing","orange", 32,"composite", "steel");
         System.out.print(mySecondCondo.getDoorColor());
-        
+
+        House myHouse = new Condo();
+        myHouse.doorOpenClose();
     }
     public static void TruckExample() {
         Truck myTruck = new Truck("boxbed ",26, "wheelSize", "windowType", "colorType");
