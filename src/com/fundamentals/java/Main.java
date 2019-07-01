@@ -7,10 +7,25 @@ import com.fundamentals.lesson10.Lesson10;
 
 public class Main {
 
+
+    public  static int num = 0;
+
+    static {
+        System.out.println("Static block 1");
+        num = 42;
+    } // end static block
+
+    static{
+        System.out.println("Static block 2");
+        num = 62;
+    } //end static block
+
     public static void main(String[] args) {
-        lesson12Example();
+        lesson15Example();
+        //lesson14Example();
+         //lesson12Example();
         //TruckExample();
-        lesson11Example();
+        //lesson11Example();
         //lesson10Example();
         //lesson9Example();
         //beerSong();
@@ -23,6 +38,34 @@ public class Main {
         //houseExample();
 
     } // end main method
+
+    public  static void lesson15Example() {
+        int[] myKeys = {0,1,2,3,4,5,6,7,8,9};
+        Blackberry myBlackberry = new Blackberry(25,myKeys,0,"Color Screen");
+        myBlackberry.receiveCall();
+        AbstractCellPhone myOldPhone = new Blackberry(30,myKeys,1, "Monochrome");
+        myOldPhone.receiveCall();
+        myOldPhone.endCall();
+    } // end method
+
+
+    public  static void lesson14Example() {
+        //Lesson14.My_First_FINAL =10; // Can not change value of a final
+
+        int total = Lesson14.My_First_FINAL * 35; //2019 * 35
+        System.out.println(total);
+
+        //Can change the value of a non-final static
+        Lesson14.myFirstStatic = 98; // original is 35
+        System.out.println(Lesson14.myFirstStatic);
+
+        Lesson14.setMyFirstStaticMethod(10);
+
+        System.out.println("Block number was"+num);
+        Lesson14.MyInnerClass test = new Lesson14.MyInnerClass();
+        test.myInnerMethod();
+    }
+
 
     public static void lesson12Example() {
         Condo myCondo = new Condo();
