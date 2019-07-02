@@ -1,46 +1,40 @@
 package com.fundamentals.java;
 /*
-*
-* */
-import java.awt.*;
+ *
+ * */
+
 public class week3lab {
-    public void Grade() {
-        char Grade = 'X';
-        switch (Grade) {
+
+    public String showGrade(char grade) {
+        switch (grade) {
             case 'E':
-                System.out.print("Excellent");
-                break;
+                return "Excellent";
             case 'V':
-                System.out.print("VeryGood");
-                break;
+                return "Very Good";
             case 'G':
-                System.out.print("Good");
-                break;
+                return "Good";
             case 'A':
-                System.out.println("Average");
-                break;
+                return "Average";
             case 'F':
-                System.out.println("Fail");
-                break;
+                return "Fail";
 
             default:
-                System.out.println(Grade);
+                return "Not a valid grade";
+//Lab3 lab3 = newLab3
 
         }
-
-
-    }//end of method
-
-    public void basicDoWhileExample() {
-        int today = 0;
-        do {
-            if (today % 3 == 0) {
-                System.out.println(today);
-            }
-
-            today++;
-
-        } while (today < 50);
     }
 
-}
+
+
+        public void divisibleByThree() {
+
+            for (int i = 0; i < 50; i++) {
+                if (i % 3 == 0) {
+                    System.out.println(i);
+                }
+
+            }
+        }
+    }
+
